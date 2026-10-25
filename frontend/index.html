@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>JobTrack | Your Career Journey</title>
+    <meta
+        name="description"
+        content="JobTrack helps you organize job opportunities, manage applications, and keep your career search on track."
+    >
+
+    <link rel="stylesheet" href="./src/output.css">
+</head>
+
+<body class="min-h-screen bg-white text-slate-900 antialiased">
+
+    <!-- Shared Navbar -->
+    <header class="border-b border-slate-200 bg-white">
+        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+
+            <div class="flex items-center justify-between gap-4 py-4">
+                <!-- Logo -->
+                <a href="./index.html" class="flex shrink-0 items-center gap-2.5" aria-label="JobTrack home">
+                    <span class="flex h-10 w-10 items-center justify-center rounded-xl bg-indigo-600 text-xl font-bold text-white">
+                        J
+                    </span>
+                    <span class="text-xl font-bold tracking-tight text-slate-900">
+                        Job<span class="text-indigo-600">Track</span>
+                    </span>
+                </a>
+
+                <!-- Authentication links -->
+                <div class="flex shrink-0 items-center gap-2">
+                    <a
+                        href="./login.html"
+                        class="rounded-lg px-3 py-2 text-sm font-semibold text-slate-700 transition hover:bg-slate-100"
+                    >
+                        Log in
+                    </a>
+                    <a
+                        href="./register.html"
+                        class="rounded-lg bg-indigo-600 px-4 py-2.5 text-sm font-semibold text-white transition hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
+                    >
+                        Sign up
+                    </a>
+                </div>
+            </div>
+
+            <!-- Page navigation: horizontally scrollable on small screens -->
+            <nav
+                aria-label="Main navigation"
+                class="-mx-4 flex gap-1 overflow-x-auto px-4 pb-3 sm:-mx-6 sm:px-6 lg:-mx-8 lg:px-8"
+            >
+                <a href="./index.html" aria-current="page" class="shrink-0 rounded-lg bg-indigo-50 px-3 py-2 text-sm font-semibold text-indigo-700">
+                    Home
+                </a>
+                <a href="./dashboard.html" class="shrink-0 rounded-lg px-3 py-2 text-sm font-medium text-slate-600 transition hover:bg-slate-100 hover:text-indigo-600">
+                    Dashboard
+                </a>
+                <a href="./job-board.html" class="shrink-0 rounded-lg px-3 py-2 text-sm font-medium text-slate-600 transition hover:bg-slate-100 hover:text-indigo-600">
+                    Job Board
+                </a>
+                <a href="./job-details.html" class="shrink-0 rounded-lg px-3 py-2 text-sm font-medium text-slate-600 transition hover:bg-slate-100 hover:text-indigo-600">
+                    Job Details
+                </a>
+                <a href="./add-application.html" class="shrink-0 rounded-lg px-3 py-2 text-sm font-medium text-slate-600 transition hover:bg-slate-100 hover:text-indigo-600">
+                    Add Application
+                </a>
+                <a href="./application-pipeline.html" class="shrink-0 rounded-lg px-3 py-2 text-sm font-medium text-slate-600 transition hover:bg-slate-100 hover:text-indigo-600">
+                    Application Pipeline
+                </a>
+                <a href="./profile.html" class="shrink-0 rounded-lg px-3 py-2 text-sm font-medium text-slate-600 transition hover:bg-slate-100 hover:text-indigo-600">
+                    Profile / Settings
+                </a>
+            </nav>
+
+        </div>
+    </header>
+
+
+    <main>
+
+        <!-- Simple Hero Section -->
+        <section id="home" class="overflow-hidden bg-gradient-to-b from-indigo-50 to-white">
+            <div class="mx-auto grid max-w-7xl items-center gap-12 px-5 py-20 sm:px-6 sm:py-24 lg:grid-cols-2 lg:px-8 lg:py-28">
+
+                <div>
+                    <span class="inline-flex items-center gap-2 rounded-full border border-indigo-100 bg-white px-4 py-2 text-sm font-semibold text-indigo-700">
+                        <span class="h-2 w-2 rounded-full bg-indigo-600"></span>
+                        A smarter way to job hunt
+                    </span>
+
+                    <h1 class="mt-6 max-w-2xl text-4xl leading-tight font-extrabold tracking-tight text-slate-900 sm:text-5xl lg:text-6xl">
+                        Your job search,
+                        <span class="text-indigo-600">all in one place.</span>
+                    </h1>
+
+                    <p class="mt-6 max-w-xl text-base leading-8 text-slate-600 sm:text-lg">
+                        JobTrack helps you save opportunities, organize your applications,
+                        and keep track of every step toward your next career move.
+                    </p>
+
+                    <div class="mt-8 flex flex-col gap-3 sm:flex-row">
+                        <a
+                            href="./job-board.html"
+                            class="inline-flex items-center justify-center gap-2 rounded-xl bg-indigo-600 px-6 py-3.5 font-semibold text-white shadow-lg shadow-indigo-600/20 transition hover:-translate-y-0.5 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
+                        >
+                            Find Jobs
+                            <span aria-hidden="true">&rarr;</span>
+                        </a>
+                        <a
+                            href="./register.html"
+                            class="inline-flex items-center justify-center rounded-xl border border-slate-200 bg-white px-6 py-3.5 font-semibold text-slate-700 transition hover:border-indigo-200 hover:bg-indigo-50"
+                        >
+                            Get Started
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Simple illustration, not a dashboard -->
+                <div class="relative mx-auto w-full max-w-lg">
+                    <div class="absolute inset-6 rounded-full bg-indigo-100 blur-3xl"></div>
+
+                    <div class="relative rounded-3xl border border-indigo-100 bg-white p-6 shadow-xl shadow-indigo-950/5 sm:p-8">
+                        <div class="flex items-start gap-4">
+                            <div class="flex h-14 w-14 shrink-0 items-center justify-center rounded-2xl bg-indigo-100 text-2xl" aria-hidden="true">
+                                &#128188;
+                            </div>
+                            <div>
+                                <p class="text-sm font-semibold text-indigo-600">YOUR NEXT OPPORTUNITY</p>
+                                <h2 class="mt-1 text-xl font-bold text-slate-900 sm:text-2xl">
+                                    Make your next move count.
+                                </h2>
+                                <p class="mt-2 text-sm leading-6 text-slate-500">
+                                    Keep your job search clear, organized, and moving forward.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="my-7 h-px bg-slate-100"></div>
+
+                        <div class="space-y-4">
+                            <div class="flex items-center gap-3">
+                                <span class="flex h-9 w-9 items-center justify-center rounded-full bg-emerald-100 font-bold text-emerald-700" aria-hidden="true">
+                                    &#10003;
+                                </span>
+                                <div>
+                                    <p class="font-semibold text-slate-800">Save opportunities</p>
+                                    <p class="text-sm text-slate-500">Keep interesting jobs close at hand.</p>
+                                </div>
+                            </div>
+
+                            <div class="flex items-center gap-3">
+                                <span class="flex h-9 w-9 items-center justify-center rounded-full bg-blue-100 font-bold text-blue-700" aria-hidden="true">
+                                    &#8594;
+                                </span>
+                                <div>
+                                    <p class="font-semibold text-slate-800">Track your applications</p>
+                                    <p class="text-sm text-slate-500">Know where each application stands.</p>
+                                </div>
+                            </div>
+
+                            <div class="flex items-center gap-3">
+                                <span class="flex h-9 w-9 items-center justify-center rounded-full bg-violet-100 font-bold text-violet-700" aria-hidden="true">
+                                    &#9733;
+                                </span>
+                                <div>
+                                    <p class="font-semibold text-slate-800">Stay ready for what is next</p>
+                                    <p class="text-sm text-slate-500">Keep interviews and follow-ups organized.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="absolute -right-2 -top-4 rounded-xl border border-slate-100 bg-white px-4 py-3 shadow-lg sm:-right-5">
+                        <p class="text-xs font-medium text-slate-500">Your career</p>
+                        <p class="mt-1 text-sm font-bold text-indigo-600">Moving forward &#8599;</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- Features Section -->
+        <section id="features" class="py-20 sm:py-24">
+            <div class="mx-auto max-w-7xl px-5 sm:px-6 lg:px-8">
+
+                <div class="mx-auto max-w-2xl text-center">
+                    <p class="text-sm font-bold tracking-widest text-indigo-600 uppercase">
+                        What you can do
+                    </p>
+                    <h2 class="mt-3 text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">
+                        A simpler way to stay organized
+                    </h2>
+                    <p class="mt-4 leading-7 text-slate-600">
+                        Everything you need to manage your job search without the clutter.
+                    </p>
+                </div>
+
+                <div class="mt-12 grid gap-6 md:grid-cols-3">
+
+                    <article class="rounded-2xl border border-slate-200 bg-white p-6 transition hover:-translate-y-1 hover:border-indigo-200 hover:shadow-lg">
+                        <div class="flex h-12 w-12 items-center justify-center rounded-xl bg-indigo-100 text-2xl" aria-hidden="true">
+                            &#128269;
+                        </div>
+                        <h3 class="mt-5 text-lg font-bold text-slate-900">Find Opportunities</h3>
+                        <p class="mt-3 text-sm leading-6 text-slate-600">
+                            Browse job opportunities and find roles that fit your goals.
+                        </p>
+                    </article>
+
+                    <article class="rounded-2xl border border-slate-200 bg-white p-6 transition hover:-translate-y-1 hover:border-indigo-200 hover:shadow-lg">
+                        <div class="flex h-12 w-12 items-center justify-center rounded-xl bg-emerald-100 text-2xl" aria-hidden="true">
+                            &#128203;
+                        </div>
+                        <h3 class="mt-5 text-lg font-bold text-slate-900">Manage Applications</h3>
+                        <p class="mt-3 text-sm leading-6 text-slate-600">
+                            Keep company details, application stages, and important dates together.
+                        </p>
+                    </article>
+
+                    <article class="rounded-2xl border border-slate-200 bg-white p-6 transition hover:-translate-y-1 hover:border-indigo-200 hover:shadow-lg">
+                        <div class="flex h-12 w-12 items-center justify-center rounded-xl bg-amber-100 text-2xl" aria-hidden="true">
+                            &#128197;
+                        </div>
+                        <h3 class="mt-5 text-lg font-bold text-slate-900">Stay on Track</h3>
+                        <p class="mt-3 text-sm leading-6 text-slate-600">
+                            Keep interview dates and follow-ups in view as you move forward.
+                        </p>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Short How It Works Section -->
+        <section id="how-it-works" class="border-y border-slate-100 bg-slate-50 py-16 sm:py-20">
+            <div class="mx-auto max-w-7xl px-5 sm:px-6 lg:px-8">
+                <div class="grid gap-10 md:grid-cols-2 md:items-center">
+
+                    <div>
+                        <p class="text-sm font-bold tracking-widest text-indigo-600 uppercase">
+                            How it works
+                        </p>
+                        <h2 class="mt-3 text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">
+                            From searching to getting hired.
+                        </h2>
+                        <p class="mt-4 leading-7 text-slate-600">
+                            Save a job you like, add it to your applications, and update its
+                            status as you progress. JobTrack keeps the process simple.
+                        </p>
+                    </div>
+
+                    <ol class="space-y-4">
+                        <li class="flex items-center gap-4 rounded-xl border border-slate-200 bg-white p-4">
+                            <span class="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-indigo-100 font-bold text-indigo-700">1</span>
+                            <span class="font-semibold text-slate-800">Find and save a job opportunity</span>
+                        </li>
+                        <li class="flex items-center gap-4 rounded-xl border border-slate-200 bg-white p-4">
+                            <span class="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-indigo-100 font-bold text-indigo-700">2</span>
+                            <span class="font-semibold text-slate-800">Add and organize your application</span>
+                        </li>
+                        <li class="flex items-center gap-4 rounded-xl border border-slate-200 bg-white p-4">
+                            <span class="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-indigo-100 font-bold text-indigo-700">3</span>
+                            <span class="font-semibold text-slate-800">Track your progress until the final result</span>
+                        </li>
+                    </ol>
+
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Call to Action -->
+        <section class="px-5 py-20 sm:px-6 sm:py-24 lg:px-8">
+            <div class="mx-auto max-w-5xl rounded-3xl bg-indigo-600 px-6 py-12 text-center shadow-xl shadow-indigo-950/10 sm:px-12 sm:py-16">
+                <h2 class="text-3xl font-bold tracking-tight text-white sm:text-4xl">
+                    Ready to organize your job search?
+                </h2>
+                <p class="mx-auto mt-4 max-w-2xl leading-7 text-indigo-100">
+                    Start keeping your opportunities and applications in one place.
+                </p>
+                <a
+                    href="./register.html"
+                    class="mt-8 inline-flex items-center justify-center gap-2 rounded-xl bg-white px-6 py-3.5 font-semibold text-indigo-700 transition hover:bg-indigo-50 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-indigo-600"
+                >
+                    Get Started
+                    <span aria-hidden="true">&rarr;</span>
+                </a>
+            </div>
+        </section>
+
+    </main>
+
+
+    <!-- Shared Footer -->
+    <footer class="border-t border-slate-200 bg-white">
+        <div class="mx-auto flex max-w-7xl flex-col gap-6 px-5 py-8 sm:px-6 md:flex-row md:items-center md:justify-between lg:px-8">
+
+            <a href="./index.html" class="flex items-center gap-2.5">
+                <span class="flex h-9 w-9 items-center justify-center rounded-lg bg-indigo-600 font-bold text-white">
+                    J
+                </span>
+                <span class="text-lg font-bold text-slate-900">
+                    Job<span class="text-indigo-600">Track</span>
+                </span>
+            </a>
+
+            <p class="text-sm leading-6 text-slate-500">
+                Organize your applications. Move your career forward.
+            </p>
+
+            <p class="text-sm text-slate-400">
+                &copy; 2026 JobTrack. All rights reserved.
+            </p>
+            
+            <a href="./index.html" class="font-medium text-indigo-600 hover:text-indigo-700">Back to Home</a>
+
+        </div>
+    </footer>
+
+</body>
+</html>
