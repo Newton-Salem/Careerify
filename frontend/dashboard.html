@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Careerify - Dashboard</title>
+
+    <link rel="stylesheet" href="./src/output.css">
+</head>
+
+
+<body class="min-h-screen bg-[#f6f7fc] text-slate-800">
+
+
+    <!-- Shared Navbar -->
+    <header class="border-b border-slate-200 bg-white">
+        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+
+            <div class="flex items-center justify-between gap-4 py-4">
+                <!-- Logo -->
+                <a href="./index.html" class="flex shrink-0 items-center gap-2.5" aria-label="Careerify home">
+                    <span class="flex h-10 w-10 items-center justify-center rounded-xl bg-indigo-600 text-xl font-bold text-white">
+                        C
+                    </span>
+                    <span class="text-xl font-bold tracking-tight text-slate-900">
+                        Career<span class="text-indigo-600">ify</span>
+                    </span>
+                </a>
+
+                <!-- Authentication links -->
+                <div class="flex shrink-0 items-center gap-2">
+                    <a
+                        href="./login.html"
+                        class="rounded-lg px-3 py-2 text-sm font-semibold text-slate-700 transition hover:bg-slate-100"
+                    >
+                        Log in
+                    </a>
+                    <a
+                        href="./register.html"
+                        class="rounded-lg bg-indigo-600 px-4 py-2.5 text-sm font-semibold text-white transition hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
+                    >
+                        Sign up
+                    </a>
+                </div>
+            </div>
+
+            <!-- Page navigation: horizontally scrollable on small screens -->
+            <nav
+                aria-label="Main navigation"
+                class="-mx-4 flex gap-1 overflow-x-auto px-4 pb-3 sm:-mx-6 sm:px-6 lg:-mx-8 lg:px-8"
+            >
+                <a href="./index.html" aria-current="page" class="shrink-0 rounded-lg bg-indigo-50 px-3 py-2 text-sm font-semibold text-indigo-700">
+                    Home
+                </a>
+                <a href="./dashboard.html" class="shrink-0 rounded-lg px-3 py-2 text-sm font-medium text-slate-600 transition hover:bg-slate-100 hover:text-indigo-600">
+                    Dashboard
+                </a>
+                <a href="./job-board.html" class="shrink-0 rounded-lg px-3 py-2 text-sm font-medium text-slate-600 transition hover:bg-slate-100 hover:text-indigo-600">
+                    Job Board
+                </a>
+                <a href="./job-details.html" class="shrink-0 rounded-lg px-3 py-2 text-sm font-medium text-slate-600 transition hover:bg-slate-100 hover:text-indigo-600">
+                    Job Details
+                </a>
+                <a href="./add-application.html" class="shrink-0 rounded-lg px-3 py-2 text-sm font-medium text-slate-600 transition hover:bg-slate-100 hover:text-indigo-600">
+                    Add Application
+                </a>
+                <a href="./application-pipeline.html" class="shrink-0 rounded-lg px-3 py-2 text-sm font-medium text-slate-600 transition hover:bg-slate-100 hover:text-indigo-600">
+                    Application Pipeline
+                </a>
+                <a href="./profile.html" class="shrink-0 rounded-lg px-3 py-2 text-sm font-medium text-slate-600 transition hover:bg-slate-100 hover:text-indigo-600">
+                    Profile / Settings
+                </a>
+            </nav>
+
+        </div>
+    </header>
+
+    <!-- ================= MAIN ================= -->
+
+    <main class="max-w-6xl mx-auto px-5 lg:px-0 py-8">
+
+
+        <!-- Heading + Activity -->
+        <section class="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-5 mb-7">
+
+            <div>
+
+                <p class="text-xs tracking-wider font-bold text-indigo-600 uppercase mb-2">
+                    Your Career Dashboard
+                </p>
+
+                <h1 class="text-3xl md:text-4xl font-semibold text-slate-900">
+                    Welcome back, Mohamed 👋
+                </h1>
+
+                <p class="text-sm md:text-base text-slate-500 mt-2">
+                    Here's what's happening with your job search.
+                </p>
+
+            </div>
+
+
+            <!-- Activity -->
+            <div class="bg-white border border-slate-200 rounded-xl px-5 py-4 shadow-sm flex items-center gap-4">
+
+                <div class="w-10 h-10 rounded-lg bg-emerald-50 flex items-center justify-center">
+
+                    <svg
+                        class="w-5 h-5 text-emerald-600"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        viewBox="0 0 24 24">
+
+                        <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M5 15l4-4 3 3 7-7">
+                        </path>
+
+                    </svg>
+
+                </div>
+
+                <div>
+
+                    <p class="text-sm font-semibold">
+                        Activity is up this week
+                    </p>
+
+                    <p class="text-xs text-slate-500 mt-1">
+                        4 applications moved forward this month
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ================= METRIC CARDS ================= -->
+
+        <section class="grid grid-cols-1 md:grid-cols-3 gap-5 mb-6">
+
+
+            <!-- Applications -->
+            <article class="bg-white rounded-xl border border-slate-200 shadow-sm overflow-hidden">
+
+                <div class="h-1 bg-indigo-400"></div>
+
+                <div class="p-6 flex gap-4">
+
+                    <div class="w-11 h-11 rounded-xl bg-indigo-50 flex items-center justify-center">
+
+                        <svg
+                            class="w-5 h-5 text-indigo-600"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            viewBox="0 0 24 24">
+
+                            <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                d="M9 6h6M9 10h6M9 14h4">
+                            </path>
+
+                            <rect
+                                x="5"
+                                y="3"
+                                width="14"
+                                height="18"
+                                rx="2">
+                            </rect>
+
+                        </svg>
+
+                    </div>
+
+                    <div>
+
+                        <p class="text-sm text-slate-500">
+                            Total Applications
+                        </p>
+
+                        <p class="text-3xl font-bold mt-1">
+                            24
+                        </p>
+
+                        <p class="text-xs text-slate-400 mt-1">
+                            4 added this month
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- Interviews -->
+            <article class="bg-white rounded-xl border border-slate-200 shadow-sm overflow-hidden">
+
+                <div class="h-1 bg-orange-300"></div>
+
+                <div class="p-6 flex gap-4">
+
+                    <div class="w-11 h-11 rounded-xl bg-orange-50 flex items-center justify-center">
+
+                        <svg
+                            class="w-5 h-5 text-orange-500"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            viewBox="0 0 24 24">
+
+                            <rect
+                                x="4"
+                                y="5"
+                                width="16"
+                                height="15"
+                                rx="2">
+                            </rect>
+
+                            <path d="M8 3v4M16 3v4M4 10h16"></path>
+
+                        </svg>
+
+                    </div>
+
+
+                    <div>
+
+                        <p class="text-sm text-slate-500">
+                            Interviews Scheduled
+                        </p>
+
+                        <p class="text-3xl font-bold mt-1">
+                            6
+                        </p>
+
+                        <p class="text-xs text-slate-400 mt-1">
+                            2 coming up this week
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- Offer Rate -->
+            <article class="bg-white rounded-xl border border-slate-200 shadow-sm overflow-hidden">
+
+                <div class="h-1 bg-emerald-400"></div>
+
+                <div class="p-6 flex gap-4">
+
+                    <div class="w-11 h-11 rounded-xl bg-emerald-50 flex items-center justify-center">
+
+                        <svg
+                            class="w-5 h-5 text-emerald-600"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            viewBox="0 0 24 24">
+
+                            <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                d="M5 15l4-4 3 3 7-7">
+                            </path>
+
+                        </svg>
+
+                    </div>
+
+
+                    <div>
+
+                        <p class="text-sm text-slate-500">
+                            Offer Rate
+                        </p>
+
+                        <p class="text-3xl font-bold mt-1">
+                            12.5%
+                        </p>
+
+                        <p class="text-xs text-emerald-600 mt-1">
+                            Up 2.4% from last month
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+        </section>
+
+
+
+        <!-- ================= CHARTS ================= -->
+
+        <section class="grid grid-cols-1 lg:grid-cols-5 gap-5 mb-6">
+
+
+            <!-- Bar Chart -->
+            <article class="lg:col-span-3 bg-white rounded-xl border border-slate-200 shadow-sm">
+
+                <div class="px-6 py-5 border-b border-slate-100 flex items-start justify-between">
+
+                    <div>
+
+                        <h2 class="font-semibold text-lg">
+                            Applications by Stage
+                        </h2>
+
+                        <p class="text-xs text-slate-500 mt-1">
+                            Current application pipeline
+                        </p>
+
+                    </div>
+
+
+                    <span class="border border-slate-200 px-3 py-1 rounded-lg text-xs text-slate-500">
+                        All time
+                    </span>
+
+                </div>
+
+
+                <div class="p-7">
+
+                    <div class="h-56 flex items-end justify-around gap-4 border-b border-slate-200">
+
+
+                        <!-- Applied -->
+                        <div class="flex flex-col items-center justify-end h-full">
+
+                            <span class="text-xs mb-2">
+                                12
+                            </span>
+
+                            <div class="w-9 md:w-12 bg-indigo-600 rounded-t-md h-[75%]"></div>
+
+                            <span class="text-xs text-slate-500 mt-3 mb-2">
+                                Applied
+                            </span>
+
+                        </div>
+
+
+
+                        <!-- Screening -->
+                        <div class="flex flex-col items-center justify-end h-full">
+
+                            <span class="text-xs mb-2">
+                                7
+                            </span>
+
+                            <div class="w-9 md:w-12 bg-indigo-400 rounded-t-md h-[45%]"></div>
+
+                            <span class="text-xs text-slate-500 mt-3 mb-2">
+                                Screening
+                            </span>
+
+                        </div>
+
+
+
+                        <!-- Interview -->
+                        <div class="flex flex-col items-center justify-end h-full">
+
+                            <span class="text-xs mb-2">
+                                4
+                            </span>
+
+                            <div class="w-9 md:w-12 bg-orange-400 rounded-t-md h-[28%]"></div>
+
+                            <span class="text-xs text-slate-500 mt-3 mb-2">
+                                Interview
+                            </span>
+
+                        </div>
+
+
+
+                        <!-- Offer -->
+                        <div class="flex flex-col items-center justify-end h-full">
+
+                            <span class="text-xs mb-2">
+                                2
+                            </span>
+
+                            <div class="w-9 md:w-12 bg-emerald-500 rounded-t-md h-[18%]"></div>
+
+                            <span class="text-xs text-slate-500 mt-3 mb-2">
+                                Offer
+                            </span>
+
+                        </div>
+
+
+
+                        <!-- Rejected -->
+                        <div class="flex flex-col items-center justify-end h-full">
+
+                            <span class="text-xs mb-2">
+                                3
+                            </span>
+
+                            <div class="w-9 md:w-12 bg-rose-400 rounded-t-md h-[24%]"></div>
+
+                            <span class="text-xs text-slate-500 mt-3 mb-2">
+                                Rejected
+                            </span>
+
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- Doughnut -->
+            <article class="lg:col-span-2 bg-white rounded-xl border border-slate-200 shadow-sm">
+
+
+                <div class="px-6 py-5 border-b border-slate-100">
+
+                    <h2 class="font-semibold text-lg">
+                        Employment Type
+                    </h2>
+
+                    <p class="text-xs text-slate-500 mt-1">
+                        Applications by work arrangement
+                    </p>
+
+                </div>
+
+
+
+                <div class="p-6 flex flex-col sm:flex-row lg:flex-col xl:flex-row items-center justify-center gap-8">
+
+
+                    <!-- Circle -->
+                    <div
+                        class="relative w-40 h-40 rounded-full"
+                        style="
+                        background:
+                        conic-gradient(
+                            #4f46e5 0 42%,
+                            #38bdf8 42% 71%,
+                            #f59e0b 71% 88%,
+                            #94a3b8 88% 100%
+                        );
+                        ">
+
+                        <div class="absolute inset-7 rounded-full bg-white flex flex-col items-center justify-center">
+
+                            <span class="text-2xl font-bold">
+                                24
+                            </span>
+
+                            <span class="text-xs text-slate-500">
+                                Total
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- Legend -->
+                    <div class="space-y-3 text-sm w-full max-w-[180px]">
+
+                        <div class="flex justify-between gap-5">
+
+                            <span class="flex items-center gap-2">
+                                <span class="w-2.5 h-2.5 bg-indigo-600 rounded-full"></span>
+                                Full-time
+                            </span>
+
+                            <strong>42%</strong>
+
+                        </div>
+
+
+                        <div class="flex justify-between gap-5">
+
+                            <span class="flex items-center gap-2">
+                                <span class="w-2.5 h-2.5 bg-sky-400 rounded-full"></span>
+                                Remote
+                            </span>
+
+                            <strong>29%</strong>
+
+                        </div>
+
+
+                        <div class="flex justify-between gap-5">
+
+                            <span class="flex items-center gap-2">
+                                <span class="w-2.5 h-2.5 bg-amber-500 rounded-full"></span>
+                                Internship
+                            </span>
+
+                            <strong>17%</strong>
+
+                        </div>
+
+
+                        <div class="flex justify-between gap-5">
+
+                            <span class="flex items-center gap-2">
+                                <span class="w-2.5 h-2.5 bg-slate-400 rounded-full"></span>
+                                Contract
+                            </span>
+
+                            <strong>12%</strong>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+        </section>
+
+
+
+        <!-- ================= RECENT APPLICATIONS ================= -->
+
+        <section class="bg-white rounded-xl border border-slate-200 shadow-sm overflow-hidden">
+
+            <div class="px-6 py-5 flex justify-between items-center border-b border-slate-100">
+
+                <div>
+
+                    <h2 class="text-lg font-semibold">
+                        Recent Applications
+                    </h2>
+
+                    <p class="text-xs text-slate-500 mt-1">
+                        Your latest job application activity
+                    </p>
+
+                </div>
+
+
+                <a href="#" class="text-xs font-semibold text-indigo-600">
+                    View all applications
+                </a>
+
+            </div>
+
+
+            <div class="overflow-x-auto">
+
+                <table class="w-full text-left min-w-[650px]">
+
+                    <thead class="text-xs text-slate-400">
+
+                        <tr>
+
+                            <th class="px-6 py-4 font-medium">
+                                POSITION
+                            </th>
+
+                            <th class="px-6 py-4 font-medium">
+                                COMPANY
+                            </th>
+
+                            <th class="px-6 py-4 font-medium">
+                                STATUS
+                            </th>
+
+                            <th class="px-6 py-4 font-medium">
+                                APPLIED DATE
+                            </th>
+
+                        </tr>
+
+                    </thead>
+
+
+                    <tbody class="text-sm">
+
+
+                        <tr class="border-t border-slate-100">
+
+                            <td class="px-6 py-4 font-medium">
+                                Frontend Developer
+                            </td>
+
+                            <td class="px-6 py-4">
+                                Google
+                            </td>
+
+                            <td class="px-6 py-4">
+
+                                <span class="px-3 py-1 rounded-full bg-orange-50 text-orange-600 text-xs">
+                                    Interviewing
+                                </span>
+
+                            </td>
+
+                            <td class="px-6 py-4 text-slate-500">
+                                Oct 20
+                            </td>
+
+                        </tr>
+
+
+
+                        <tr class="border-t border-slate-100">
+
+                            <td class="px-6 py-4 font-medium">
+                                Software Engineer
+                            </td>
+
+                            <td class="px-6 py-4">
+                                Microsoft
+                            </td>
+
+                            <td class="px-6 py-4">
+
+                                <span class="px-3 py-1 rounded-full bg-indigo-50 text-indigo-600 text-xs">
+                                    Applied
+                                </span>
+
+                            </td>
+
+                            <td class="px-6 py-4 text-slate-500">
+                                Oct 18
+                            </td>
+
+                        </tr>
+
+
+
+                        <tr class="border-t border-slate-100">
+
+                            <td class="px-6 py-4 font-medium">
+                                Backend Developer
+                            </td>
+
+                            <td class="px-6 py-4">
+                                Amazon
+                            </td>
+
+                            <td class="px-6 py-4">
+
+                                <span class="px-3 py-1 rounded-full bg-violet-50 text-violet-600 text-xs">
+                                    Screening
+                                </span>
+
+                            </td>
+
+                            <td class="px-6 py-4 text-slate-500">
+                                Oct 16
+                            </td>
+
+                        </tr>
+
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+
+    <!-- Shared Footer -->
+    <footer class="border-t border-slate-200 bg-white">
+        <div class="mx-auto flex max-w-7xl flex-col gap-6 px-5 py-8 sm:px-6 md:flex-row md:items-center md:justify-between lg:px-8">
+
+            <a href="./index.html" class="flex items-center gap-2.5">
+                <span class="flex h-9 w-9 items-center justify-center rounded-lg bg-indigo-600 font-bold text-white">
+                    C
+                </span>
+                <span class="text-lg font-bold text-slate-900">
+                    Career<span class="text-indigo-600">ify</span>
+                </span>
+            </a>
+
+            <p class="text-sm text-slate-400">
+                &copy; 2026 Careerify. All rights reserved.
+            </p>
+            
+            <a href="./index.html" class="font-medium text-indigo-600 hover:text-indigo-700">Back to Home</a>
+
+        </div>
+    </footer>
+
+</body>
+
+</html>
